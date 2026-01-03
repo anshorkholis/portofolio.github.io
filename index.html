@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>www.PortofolioAnshor</title>
+</head>
+<body>
+  <link rel="stylesheet" href="style.css">
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(143, 17, 17);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-underline ms-auto ">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#About">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#Gallery">Gallery</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="#Contact">Contact</a>
+  </li>
+</ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+<!--Tanggal dan Waktu-->
+    <div style="background-color: rgb(231, 205, 193); text-align: center; padding: 3px;">
+        <span id="waktu" ></span>
+  <script>
+    function tampilkanWaktu() {
+        var sekarang = new Date();
+        var hari = sekarang.getDate();
+        var bulan = sekarang.getMonth() + 1; 
+        var tahun = sekarang.getFullYear();
+        var jam = sekarang.getHours();
+        var menit = sekarang.getMinutes();
+        var detik = sekarang.getSeconds();
+
+        if (jam < 10) jam = "0" + jam;
+        if (menit < 10) menit = "0" + menit;
+        if (detik < 10) detik = "0" + detik;
+
+        var waktu = hari + "/" + bulan + "/" + tahun + " " + jam + ":" + menit + ":" + detik;
+
+        document.getElementById("waktu").innerHTML = waktu;
+    }
+
+    setInterval(tampilkanWaktu, 1000);
+</script>
+<!--End Tanggal dan Waktu-->
+
+<!--jumbotron-->
+<section class="jumbotron text-center">
+  
+    <img src="Slamet.3.jpg" alt="" width="300" height="300" class="rounded-circle">
+    <h1 class="display-4">Anshor Kholis</h1>
+    <p class="lead">Gamers | Adventure | Bussines </p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,32L9.2,37.3C18.5,43,37,53,55,69.3C73.8,85,92,107,111,101.3C129.2,96,148,64,166,85.3C184.6,107,203,181,222,197.3C240,213,258,171,277,160C295.4,149,314,171,332,186.7C350.8,203,369,213,388,197.3C406.2,181,425,139,443,106.7C461.5,75,480,53,498,48C516.9,43,535,53,554,69.3C572.3,85,591,107,609,112C627.7,117,646,107,665,101.3C683.1,96,702,96,720,85.3C738.5,75,757,53,775,42.7C793.8,32,812,32,831,37.3C849.2,43,868,53,886,90.7C904.6,128,923,192,942,181.3C960,171,978,85,997,80C1015.4,75,1034,149,1052,192C1070.8,235,1089,245,1108,229.3C1126.2,213,1145,171,1163,138.7C1181.5,107,1200,85,1218,96C1236.9,107,1255,149,1274,149.3C1292.3,149,1311,107,1329,122.7C1347.7,139,1366,213,1385,213.3C1403.1,213,1422,139,1431,101.3L1440,64L1440,320L1430.8,320C1421.5,320,1403,320,1385,320C1366.2,320,1348,320,1329,320C1310.8,320,1292,320,1274,320C1255.4,320,1237,320,1218,320C1200,320,1182,320,1163,320C1144.6,320,1126,320,1108,320C1089.2,320,1071,320,1052,320C1033.8,320,1015,320,997,320C978.5,320,960,320,942,320C923.1,320,905,320,886,320C867.7,320,849,320,831,320C812.3,320,794,320,775,320C756.9,320,738,320,720,320C701.5,320,683,320,665,320C646.2,320,628,320,609,320C590.8,320,572,320,554,320C535.4,320,517,320,498,320C480,320,462,320,443,320C424.6,320,406,320,388,320C369.2,320,351,320,332,320C313.8,320,295,320,277,320C258.5,320,240,320,222,320C203.1,320,185,320,166,320C147.7,320,129,320,111,320C92.3,320,74,320,55,320C36.9,320,18,320,9,320L0,320Z"></path></svg>
+
+</section>
+<!--end jumbotron-->
+
+<!--about me-->
+<section class="about-me text-center">
+    <section id="About" style="background-color: #f9fafa;">
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col">
+    <h2>About Me</h2>
+      </div>
+    </div>
+  </div>
+    <p class="lead">Hello Everyone!, Nama saya Anshor Kholis, Saya seorang mahasiswa semester pertama dari Universitas Pamulang dengan Prodi Sistem Informasi, Saya tinggal di Poris bersama saudara saya, umur saya 18 tahun dan mempunnyai cita cita untuk berkeliling Indonesia dan menyelesaikan wish list pendakian.
+    <p class="lead">Saya tertarik dengan kegiatan Adventure misalnya seperti mendaki, Pendakian pertama saya adalah mendaki ke Gunung Cikuray letaknya di daerah garut dengan ketinggian 2821 Mdpl, Pendakian kedua saya adalah Mendaki Gunung Slamet letaknya di daerah Tegal dengan ketinggian 3428 Mdpl, Wish List saya selanjutnya adalah ingin menamatkan 3S (Slamet, Sumbing, Sindoro).</p>
+    
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,96L7.1,122.7C14.1,149,28,203,42,192C56.5,181,71,107,85,106.7C98.8,107,113,181,127,213.3C141.2,245,155,235,169,245.3C183.5,256,198,288,212,266.7C225.9,245,240,171,254,149.3C268.2,128,282,160,296,149.3C310.6,139,325,85,339,85.3C352.9,85,367,139,381,138.7C395.3,139,409,85,424,69.3C437.6,53,452,75,466,117.3C480,160,494,224,508,234.7C522.4,245,536,203,551,170.7C564.7,139,579,117,593,122.7C607.1,128,621,160,635,165.3C649.4,171,664,149,678,165.3C691.8,181,706,235,720,250.7C734.1,267,748,245,762,245.3C776.5,245,791,267,805,277.3C818.8,288,833,288,847,245.3C861.2,203,875,117,889,85.3C903.5,53,918,75,932,101.3C945.9,128,960,160,974,149.3C988.2,139,1002,85,1016,64C1030.6,43,1045,53,1059,90.7C1072.9,128,1087,192,1101,208C1115.3,224,1129,192,1144,154.7C1157.6,117,1172,75,1186,80C1200,85,1214,139,1228,181.3C1242.4,224,1256,256,1271,229.3C1284.7,203,1299,117,1313,117.3C1327.1,117,1341,203,1355,213.3C1369.4,224,1384,160,1398,154.7C1411.8,149,1426,203,1433,229.3L1440,256L1440,320L1432.9,320C1425.9,320,1412,320,1398,320C1383.5,320,1369,320,1355,320C1341.2,320,1327,320,1313,320C1298.8,320,1285,320,1271,320C1256.5,320,1242,320,1228,320C1214.1,320,1200,320,1186,320C1171.8,320,1158,320,1144,320C1129.4,320,1115,320,1101,320C1087.1,320,1073,320,1059,320C1044.7,320,1031,320,1016,320C1002.4,320,988,320,974,320C960,320,946,320,932,320C917.6,320,904,320,889,320C875.3,320,861,320,847,320C832.9,320,819,320,805,320C790.6,320,776,320,762,320C748.2,320,734,320,720,320C705.9,320,692,320,678,320C663.5,320,649,320,635,320C621.2,320,607,320,593,320C578.8,320,565,320,551,320C536.5,320,522,320,508,320C494.1,320,480,320,466,320C451.8,320,438,320,424,320C409.4,320,395,320,381,320C367.1,320,353,320,339,320C324.7,320,311,320,296,320C282.4,320,268,320,254,320C240,320,226,320,212,320C197.6,320,184,320,169,320C155.3,320,141,320,127,320C112.9,320,99,320,85,320C70.6,320,56,320,42,320C28.2,320,14,320,7,320L0,320Z"></path></svg>
+</section>
+<!-- End about me-->
+
+<!-- Pengalaman -->
+<section id="Gallery"style= Background-color: #f3f4f5;>
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2>Gallery</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+     <div class="card" >
+      <img src="Slamet.1.jpg" class="card-img-top" alt="..." width="300" height="400">
+       <div class="card-body">
+    <p class="card-text">Bukan siapa yang kuat untuk bisa mencapai puncak tersebut tetapi merekalah yang di izinkan penciptanya untuk bisa menginjakan kaki nya di puncak tersebut.
+    </p>
+  </div>
+</div>
+      </div>
+
+      <div class="col-4">
+     <div class="card" >
+      <img src="Slamet.2.jpg" class="card-img-top" alt="..." width="300" height="400">
+       <div class="card-body">
+    <p class="card-text">Mendaki bukan tentang menaklukan puncak nya namun menikmati setiap perjalanan hingga mencapai titik tertinggi di situlah letak keseruan nya.</p>
+  </div>
+</div>
+      </div>
+
+<div class="col-4">
+     <div class="card" >
+      <img src="Cikuray.1.jpg" class="card-img-top" alt="..." width="300" height="400">
+       <div class="card-body">
+        <p class="card-text">Bumi itu ibaratkan sebuah buku jika kamu hanya diam saja artinya kamu hanya membaca halaman pertama nya saja.</p>
+
+      </div>
+</div>
+</div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,32L34.3,32C68.6,32,137,32,206,74.7C274.3,117,343,203,411,213.3C480,224,549,160,617,144C685.7,128,754,160,823,176C891.4,192,960,192,1029,165.3C1097.1,139,1166,85,1234,69.3C1302.9,53,1371,75,1406,85.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+</section>
+    
+  
+<!-- End Pengalaman -->
+
+<!-- Contact -->
+
+<section id="Contact" style="background-color: #f3f4f5;">
+<div class="container">
+    <div class="row  text-center mb-3">
+      <div class="col">
+        <h2>Contact</h2>
+      </div>
+    </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+<form>
+  <div class="mb-3 ">
+    <label for="Name" class="form-label">Masukan Nama Anda </label>
+    <input type="text" class="form-control" id="Name" aria-describedby="Name">
+    
+  <div class="mb-3">
+    <label for="email" class="form-label">Masukkan Email Enda</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="mb-3">
+    <label for="Pesan" class="form-label">Pesan Untuk Saya</label>
+    <textarea class="form-control" id="Pesan" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Kirim</button>
+</form>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+ <!-- End Contact -->
+  <!-- Footer -->
+  <footer class="text-center p-4" style="background-color: black; color: white;">
+    <p>&copy; Anshor Kholis - 251011700810 - 01SIFP016-25 All rights reserved.</p>
+  </footer>
+  <!-- End Footer -->  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
